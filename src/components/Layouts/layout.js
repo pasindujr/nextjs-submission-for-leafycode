@@ -14,7 +14,7 @@ export default function Layout({ children, title = "Rick And Morty" }) {
 
 			<main className={styles.main}>{children}</main>
 
-			<footer className={styles.footer}>PASINDUJR.ME</footer>
+			<footer className={styles.footer}>Pasindu Ruwandeniya @ pasindujr.me</footer>
 		</div>
 	);
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./CharactersTable.module.css";
 
 export default function CharacterTable({ character }) {
@@ -18,11 +19,13 @@ export default function CharacterTable({ character }) {
 
 			{character.map((character, index) => {
 				return (
-					<div className={styles.row} key={index}>
-						<div className={styles.name}>{character.name}</div>
-						<div className={styles.species}>{character.species}</div>
-						<div className={styles.gender}>{character.gender}</div>
-					</div>
+					<Link href={`/character/${character.id}`}>
+						<div className={styles.row} key={index}>
+							<div className={styles.name} >{character.name}</div>
+							<div className={styles.species} >{character.species}</div>
+							<div className={styles.gender} >{character.gender}</div>
+						</div>
+					</Link>
 				);
 			})}
 		</div>
