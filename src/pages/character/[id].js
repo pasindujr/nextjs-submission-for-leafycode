@@ -1,11 +1,11 @@
-import Layout from "../../components/Layouts/layout";
+import Layout from "../../components/Layouts/Layout";
 import styles from "./character.module.css";
 
 export default function Character(character) {
 	return (
 		<Layout title={character.character.name}>
-			<div>
-				<div className={styles.detailspanel}>
+			<div className={styles.container}>
+				<div className={styles.details_panel}>
 					<img
 						src={character.character.image}
 						alt={character.character.name}

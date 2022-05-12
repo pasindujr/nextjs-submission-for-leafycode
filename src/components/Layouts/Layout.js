@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "./Layout.module.css";
 
 export default function Layout({ children, title = "Rick And Morty" }) {
@@ -9,12 +10,16 @@ export default function Layout({ children, title = "Rick And Morty" }) {
 			</Head>
 
 			<header className={styles.header}>
-				<h1>Rick and Morty!</h1>
+				<Link href="/">
+					<h1>Rick and Morty!</h1>
+				</Link>
 			</header>
 
 			<main className={styles.main}>{children}</main>
 
-			<footer className={styles.footer}>Pasindu Ruwandeniya @ pasindujr.me</footer>
+			<footer className={styles.footer}>
+				Pasindu Ruwandeniya @ pasindujr.me
+			</footer>
 		</div>
 	);
 }

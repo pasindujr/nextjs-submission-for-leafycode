@@ -1,4 +1,15 @@
 .count {
-  margin: 12px 0;
-  color: var(--text-secondary)
+	margin: 12px 0;
+	color: var(--text-secondary);
+	flex: 1;
+}
+
+.inputContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.input {
+	flex: 2;
 }
