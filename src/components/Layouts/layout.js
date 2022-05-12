@@ -1,11 +1,11 @@
 import Head from "next/head";
 import styles from './Layout.module.css';
 
-const Layout = ({children}) => {
+export default function Layout({children, title = "Ammo Asia"}) {
     return (
         <div className={styles.container}>
 			<Head>
-				<title>Next App</title>
+				<title>{title}</title>
 			</Head>
 
             <header className={styles.header}>
@@ -17,11 +17,9 @@ const Layout = ({children}) => {
 			</main>
 
 			<footer className={styles.footer}>
-				footer
+				PASINDUJR.ME
 			</footer>
 
 		</div>
     )
 }
-
-export default Layout;
