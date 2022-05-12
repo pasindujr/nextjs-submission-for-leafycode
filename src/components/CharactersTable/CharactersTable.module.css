@@ -1,0 +1,52 @@
+.heading {
+	display: flex;
+}
+
+.heading_name,
+.heading_species,
+.heading_gender {
+	flex: 1;
+	padding: 20px;
+	color: var(--text-secondary);
+	font-weight: 500;
+}
+
+.heading_name {
+	text-align: left;
+}
+
+.heading button {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.row {
+	display: flex;
+	padding: 20px;
+	text-align: center;
+	background-color: var(--background-color-dark);
+	border-radius: 8px;
+	margin: 16px;
+	box-shadow: var(--box-shadow);
+	font-weight: 500;
+	transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.row:hover {
+	transform: translateY(-4px);
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+	flex: 1;
+	text-align: left;
+}
+
+.species {
+	flex: 1;
+}
+
+.gender {
+	flex: 1;
+}
