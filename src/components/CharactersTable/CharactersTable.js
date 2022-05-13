@@ -5,7 +5,7 @@ export default function CharacterTable({ character }) {
 	return (
 		<div>
 			<div className={styles.heading}>
-				<div className={styles.heading_flag}></div>
+				<div className={styles.heading_character}></div>
 				<button className={styles.heading_name}>
 					<div>Name</div>
 				</button>

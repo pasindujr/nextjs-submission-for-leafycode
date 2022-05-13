@@ -25,9 +25,7 @@
 }
 
 .footer_github {
-	display: inline;
-	margin-left: 10px;
-	align-self: center;
-	width: 20px;
-    height: 20px;
+	width: 25px;
+    height: 25px;
+	padding-top: 5px;
 }

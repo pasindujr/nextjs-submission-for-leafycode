@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function PageNotFound() {
 	return (
-		<Layout>
+		<Layout title="Invalid Page">
 			<div className={styles.notfound_panel}>
 				<img className={styles.notfound_rick} src="/lost.jpeg" />
 				<div className={styles.notfound_text}>
