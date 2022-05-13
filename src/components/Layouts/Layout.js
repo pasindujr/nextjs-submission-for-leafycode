@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "./Layout.module.css";
 
 export default function Layout({ children, title = "Rick And Morty" }) {
+	
+
 	return (
 		<div className={styles.container}>
 			<Head>
