@@ -20,9 +20,9 @@ export default function CharacterTable({ character }) {
 
 			{character.map((character, index) => {
 				return (
-					<Link href={`/character/${character.id}`}>
-						<div className={styles.row} key={index}>
-							<div className={styles.flags}>
+					<Link href={`/character/${character.id}`} key={character.id}>
+						<div className={styles.row} key={character.id}>
+							<div className={styles.image}>
 								<img src={character.image} alt={character.name} />
 							</div>
 							<div className={styles.name}>{character.name}</div>
