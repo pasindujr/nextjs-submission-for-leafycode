@@ -32,6 +32,7 @@ export default function Layout({ children, title = "Rick And Morty" }) {
 				<a
 					href="https://github.com/pasindujr/nextjs-submission-for-leafycode"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<VscGithubInverted className={styles.footer_github} />
 				</a>
