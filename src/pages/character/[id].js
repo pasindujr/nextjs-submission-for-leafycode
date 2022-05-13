@@ -1,15 +1,20 @@
 import Layout from "../../components/Layouts/Layout";
 import styles from "./character.module.css";
+import Image from "next/image";
 
 export default function Character(character) {
 	return (
 		<Layout title={character.character.name}>
 			<div className={styles.container}>
 				<div className={styles.details_panel}>
-					<img
-						src={character.character.image}
-						alt={character.character.name}
-					></img>
+					<div className={styles.details_panel_image}>
+						<Image
+							src={character.character.image}
+							alt={character.character.name}
+							width={300}
+							height={300}
+						></Image>
+					</div>
 
 					<h1 className={styles.overview_name}>{character.character.name}</h1>
 					<div className={styles.overview_species}>

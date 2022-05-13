@@ -28,9 +28,13 @@ export default function Layout({ children, title = "Rick And Morty" }) {
 			<main className={styles.main}>{children}</main>
 
 			<footer className={styles.footer}>
-			<div>Pasindu Ruwandeniya @ pasindujr.me</div>
-				<a href="https://github.com/pasindujr/nextjs-submission-for-leafycode" target="_blank"><VscGithubInverted className={styles.footer_github} /></a>
-				
+				<div>Pasindu Ruwandeniya @ pasindujr.me</div>
+				<a
+					href="https://github.com/pasindujr/nextjs-submission-for-leafycode"
+					target="_blank"
+				>
+					<VscGithubInverted className={styles.footer_github} />
+				</a>
 			</footer>
 		</div>
 	);

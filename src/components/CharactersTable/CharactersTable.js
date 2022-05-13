@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./CharactersTable.module.css";
+import Image from "next/image";
 
 export default function CharacterTable({ character }) {
 	return (
@@ -23,7 +24,12 @@ export default function CharacterTable({ character }) {
 					<Link href={`/character/${character.id}`} key={character.id}>
 						<div className={styles.row} key={character.id}>
 							<div className={styles.image}>
-								<img src={character.image} alt={character.name} />
+								<Image
+									src={character.image}
+									alt={character.name}
+									width="100%"
+									height="100%"
+								/>
 							</div>
 							<div className={styles.name}>{character.name}</div>
 							<div className={styles.species}>{character.species}</div>

@@ -1,13 +1,14 @@
-.details_panel img {
+.details_panel_image {
 	display: block;
 	border-radius: 4px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 30%;
+	text-align: center;
+	width: 100%;
 }
 
-.overview_panel {
-	padding: 20px;
+.details_panel {
+	padding: 30px;
 	border-radius: 8px;
 	box-shadow: var(--box-shadow);
 	background-color: var(--background-color-light);
