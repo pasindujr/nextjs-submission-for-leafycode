@@ -42,7 +42,20 @@ export default function Character(character) {
 	);
 }
 
-export const getServerSideProps = async ({ params }) => {
+export const getStaticPaths = async () => {
+	const res = await fetch("https://rickandmortyapi.com/api/character");
+	const characters = await res.json();
+	const paths = characters.results.map((character) => ({
+		params: { id: character.id.toString() },
+	}));
+
+	return {
+		paths,
+		fallback: false,
+	};
+};
+
+export const getStaticProps = async ({ params }) => {
 	const res = await fetch(
 		`https://rickandmortyapi.com/api/character/${params.id}`
 	);
