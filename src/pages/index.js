@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useState } from "react";
 import CharactersTable from "../components/CharactersTable/CharactersTable";
 import Layout from "../components/Layouts/Layout";

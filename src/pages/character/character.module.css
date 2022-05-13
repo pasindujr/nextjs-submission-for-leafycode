@@ -1,9 +1,9 @@
-.overview_panel img {
-display: block;
+.details_panel img {
+	display: block;
 	border-radius: 4px;
-    margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
 }
 
 .overview_panel {
@@ -40,8 +40,8 @@ display: block;
 }
 
 .details_panel {
-    padding: 20px;
-    background-color: var(--background-color-light);
-    box-shadow: var(--box-shadow);
-    border-radius: 8px;
+	padding: 70px;
+	background-color: var(--background-color-light);
+	box-shadow: var(--box-shadow);
+	border-radius: 8px;
 }

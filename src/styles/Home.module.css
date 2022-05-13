@@ -13,3 +13,25 @@
 .input {
 	flex: 2;
 }
+
+.notfound_rick {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.notfound_panel {
+	padding: 70px;
+	box-shadow: var(--box-shadow);
+	border-radius: 8px;
+}
+
+.notfound_text {
+	padding-top: 10px;
+	font-size: larger;
+	text-align: center;
+}
+
+.notfound_link {
+	text-decoration: underline;
+	cursor: pointer;
+}
