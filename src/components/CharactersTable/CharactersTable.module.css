@@ -1,12 +1,17 @@
 .heading {
 	display: flex;
+	padding: 20px;
+}
+
+.heading_flag {
+	flex: 1;
+	margin-right: 16px;
 }
 
 .heading_name,
 .heading_species,
 .heading_gender {
-	flex: 1;
-	padding: 20px;
+	flex: 4;
 	color: var(--text-secondary);
 	font-weight: 500;
 }
@@ -39,14 +44,31 @@
 }
 
 .name {
-	flex: 1;
+	flex: 4;
 	text-align: left;
 }
 
 .species {
-	flex: 1;
+	flex: 4;
 }
 
 .gender {
+	flex: 4;
+}
+
+.flags {
 	flex: 1;
+	margin-right: 16px;
+}
+
+.flags img {
+	width: 100%;
+	border-radius: 2px;
+}
+
+@media screen and (max-width: 720px) {
+	.species,
+	.heading_species {
+		display: none;
+	}
 }
