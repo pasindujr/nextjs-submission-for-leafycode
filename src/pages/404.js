@@ -14,7 +14,7 @@ export default function PageNotFound() {
 					Looks like you have lost your way, go back to{" "}
 					<Link href="/">
 						<span className={styles.notfound_link}>home</span>
-					</Link>
+					</Link>{" "}
 					maybe?
 				</div>
 			</div>
