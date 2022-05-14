@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick and Morty Character Info
+
+![Rick and Morty coming from a portal](https://images.wallpapersden.com/image/download/rick-and-morty-portal_a2xnZm2UmZqaraWkpJRobWllrWdma2U.jpg "Rick and Morty coming from a portal")
+
+I have designed this small web app using Next.js to show basic character data of my favorite animation series "Rick and Morty" These data are fetched from a public API endpoint on [rickandmortyapi.com](https://rickandmortyapi.com). This web app is deployed on Vercel. This is my submission for the challenge I was assigned by Leafy Code.
+
 
 ## Getting Started
 
@@ -12,11 +17,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
 
 ## Learn More
 
